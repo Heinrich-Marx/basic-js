@@ -1,4 +1,4 @@
-import { NotImplementedError } from '../extensions/index.js';
+import { NotImplementedError } from "../extensions/index.js";
 
 /**
  * There's a list of file, since two files cannot have equal names,
@@ -16,6 +16,6 @@ import { NotImplementedError } from '../extensions/index.js';
  *
  */
 export default function renameFiles(/* names */) {
-  throw new NotImplementedError('Not implemented');
+  throw new NotImplementedError("Not implemented");
   // remove line with error and write your code here
 }
