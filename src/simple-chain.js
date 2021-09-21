@@ -25,6 +25,7 @@ export default {
     // throw new NotImplementedError("Not implemented");
     // remove line with error and write your code here
     if (this.arr[position] == undefined) {
+      this.arr.length = 0;
       throw new NotImplementedError("You can't remove incorrect link!");
     } else {
       this.arr.splice(position - 1, 1);
