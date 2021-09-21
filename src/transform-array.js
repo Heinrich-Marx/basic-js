@@ -16,11 +16,7 @@ import { NotImplementedError } from "../extensions/index.js";
 export default function transform(arr) {
   // throw new NotImplementedError('Not implemented');
   // remove line with error and write your code here
-  if (!Array.isArray(arr)) {
-    throw new NotImplementedError(
-      "'arr' parameter must be an instance of the Array!"
-    );
-  } else {
+  if (Array.isArray(arr)) {
     let arr2 = [];
     for (let i of arr) {
       arr2.push(i);
@@ -48,6 +44,7 @@ export default function transform(arr) {
     }
     return arr2;
   }
+  throw new Error("'arr' parameter must be an instance of the Array!");
 }
 // [1, 2, 3, '--discard-next', 1337, '--double-prev', 4, 5],
 // [1, 2, 3, '--discard-next', 1337, '--discard-prev', 4, 5],

@@ -13,29 +13,7 @@ import { NotImplementedError } from "../extensions/index.js";
  *
  */
 export default function getSumOfDigits(n) {
-  // throw new NotImplementedError('Not implemented');
-  // remove line with error and write your code here
-  // let a = 0;
-  // let func = (value) => {
-  //   if (a < 10 && value < 10) {
-  //     return a;
-  //   } else {
-  //     value = value + "";
-  //     value = value.split("");
-  //     for (let i = 0; i < value.length; i++) {
-  //       a += +value[i];
-  //     }
-  //     if (a < 10) {
-  //       return a;
-  //     } else {
-  //       n = a;
-  //       return func(a);
-  //     }
-  //   }
-  // };
-  //func(n);
   return n < 10
     ? n
     : getSumOfDigits((n % 10) + getSumOfDigits(Math.floor(n / 10)));
 }
-//getSumOfDigits(91);
