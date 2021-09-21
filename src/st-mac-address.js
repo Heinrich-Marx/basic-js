@@ -32,4 +32,3 @@ export default function isMAC48Address(n) {
     } else return false;
   }
 }
-isMAC48Address("Z1-1B-63-84-45-E6");
